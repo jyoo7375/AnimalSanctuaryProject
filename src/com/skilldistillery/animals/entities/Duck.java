@@ -5,7 +5,7 @@ public class Duck extends Animal {
 	
 	@Override
 	public String getType() {
-		return "Cat";
+		return "Duck";
 	}
 	
 	@Override
