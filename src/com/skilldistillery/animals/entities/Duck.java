@@ -7,9 +7,9 @@ public class Duck extends Animal {
 	public void makeNoise() {
 		System.out.println(noise);
 	}
-	
+	@Override
     public void eat(int amount) {
-    	System.out.println("I am eating " + amount + " of food.");
+    	System.out.println("Duck: I am eating " + amount + " of Sunflower seeds.");
 		
 	}
 

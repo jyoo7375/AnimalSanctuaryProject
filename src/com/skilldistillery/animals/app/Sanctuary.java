@@ -25,7 +25,7 @@ public class Sanctuary {
 		}
 	}
 	
-	public void ListAnimals() {
+	public void listAnimals() {
 		System.out.println("Animals in the Sanctuary right now: ");
 		for(Animal animal : animals) {
 			if(animal != null) {

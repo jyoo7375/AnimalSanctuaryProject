@@ -9,7 +9,7 @@ public class Cat extends Animal{
 	}
 	@Override
     public void eat(int amount) {
-    	System.out.println("I am eating " + amount + " of food.");
+    	System.out.println("Cat: I am eating " + amount + " of fishes.");
 		
 	}
 }

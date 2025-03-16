@@ -10,7 +10,7 @@ public class Cow extends Animal {
 	}
 	
 	public void eat(int amount) {
-		System.out.println("I am eating " + amount + " of food.");
+		System.out.println("Cow: I am eating " + amount + " of hays.");
 		
 	}
 

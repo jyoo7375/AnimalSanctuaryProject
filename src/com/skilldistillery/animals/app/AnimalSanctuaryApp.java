@@ -10,7 +10,7 @@ import com.skilldistillery.animals.entities.Duck;
 
 
 public class AnimalSanctuaryApp {
-private String Sanctuary;
+private Sanctuary sanctuary;
 
 	public static void main(String[] args) {
 				
@@ -19,6 +19,8 @@ private String Sanctuary;
 	}
 	private void launchApp() {
 		Scanner sc = new Scanner(System.in);
+		
+		boolean roundStart = true;
 
 		
 
@@ -34,22 +36,29 @@ private String Sanctuary;
 		Animal[] animals = {new Duck() , new Cat(), new Cow()};
 		String[] animalTypes = {"Duck", "Cat", "Cow"};
 		
-		for(int i = 0; i <animals.length; i++) {
-			System.out.println("Enter the name for the " + animalTypes[i] + ": ");
-			animals[i].setName(sc.nextLine());
-			sanctuary.addAnimal(animals[i], i);
+		
+			for(int i = 0; i < animals.length; i++) {
+				System.out.println("Enter the name for the " + animalTypes[i] + ": ");
+				animals[i].setName(sc.nextLine());
+				sanctuary.addAnimal(animals[i], i);
 				
 		// Create and add animals to sanctuary
 		// Have sanctuary list animals
-		
+					
 			}
-			sanctuary.startRounds();
+			while(roundStart) {
+				sanctuary.startRounds();
 			// Tell Sanctuary to start attendant rounds
+				if(attendant.endRounds()) {
+					roundStart = false;
+				}
+			}
 			
-		sc.close();
-		
-		
-	
-	}
-
+			System.out.println("All rounds are complete!");
+			sc.close();
+			
+		}
+			
 }
+		
+
