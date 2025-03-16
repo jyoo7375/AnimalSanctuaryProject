@@ -18,6 +18,7 @@ public void makeRounds(Animal[] animals) {
 		} else {
 				int food = random.nextInt(10) + 1;
 				System.out.println("Attendant : I will feed " + animals[i].getName() + " " + food + " foods");
+				animals[i].makeNoise();
 				animals[i].eat(food);
 			}
 		}

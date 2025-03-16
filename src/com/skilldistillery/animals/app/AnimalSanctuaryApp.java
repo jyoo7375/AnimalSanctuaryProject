@@ -52,6 +52,12 @@ public class AnimalSanctuaryApp {
 			System.out.println("3. Leave Sanctuary");
 			System.out.println("===============================");
 			System.out.println("Enter your choice: ");
+			
+			if(!sc.hasNextInt()) {
+				System.out.println("Invalid choice. Please enter a number between 1 and 3");
+				sc.next();
+				continue;
+			}
 
 			int choice = sc.nextInt();
 			sc.nextLine();

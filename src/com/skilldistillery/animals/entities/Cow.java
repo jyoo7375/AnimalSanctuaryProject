@@ -1,7 +1,7 @@
 package com.skilldistillery.animals.entities;
 
 public class Cow extends Animal {
-	private static final String noise = "moo";
+	private static final String noise = "Cow: moo";
 	
 	@Override
 	public void makeNoise() {
