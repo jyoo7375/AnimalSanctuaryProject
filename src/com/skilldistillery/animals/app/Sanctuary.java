@@ -28,7 +28,7 @@ public class Sanctuary {
 		System.out.println("Animals in the Sanctuary right now: ");
 		for (Animal animal : animals) {
 			if (animal != null) {
-				System.out.println("- " + animal.getName());
+				System.out.println("- " + animal.getName() + " the " + animal.getType());
 			} else {
 				System.out.println("- Empty Enclosure");
 			}

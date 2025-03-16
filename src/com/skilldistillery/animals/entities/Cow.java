@@ -4,6 +4,11 @@ public class Cow extends Animal {
 	private static final String noise = "Cow: moo";
 	
 	@Override
+	public String getType() {
+		return "Cow";
+	}
+	
+	@Override
 	public void makeNoise() {
 		System.out.println(noise);
 		

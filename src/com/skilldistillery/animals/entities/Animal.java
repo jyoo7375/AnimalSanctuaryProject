@@ -11,6 +11,10 @@ public class Animal {
 		this.name = name;
 	}
 	
+	public String getType() {
+		return "Animal";
+	}
+	
 	public void makeNoise() {
 		
 		
